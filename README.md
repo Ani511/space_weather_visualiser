@@ -1,4 +1,4 @@
-This code creates a user-friendly web application called the Agnirva Space Weather Visualizer. 
+This code creates a user-friendly web application called the Space Weather Visualizer. 
 
 Working: 
 
@@ -58,10 +58,10 @@ Key Components of the Code:
    - Plotly Express (`plotly.express as px`): Creates interactive and visually appealing charts.
 
 2. Event Descriptions:
-   - A dictionary called `Agnirvaevent_descriptions` holds detailed explanations for each space weather event type. This helps users understand what each event means directly within the app.
+   - A dictionary called `event_descriptions` holds detailed explanations for each space weather event type. This helps users understand what each event means directly within the app.
 
 3. Custom CSS Styling:
-   - The `Agnirvaspace_theme_css` string contains styles that give the app its space-themed appearance. It sets background colors, text colors, font styles, and other visual elements to enhance the user experience.
+   - The `space_theme_css` string contains styles that give the app its space-themed appearance. It sets background colors, text colors, font styles, and other visual elements to enhance the user experience.
 
 4. User Inputs and Configuration:
    - API Key Input: Allows users to enter their NASA API Key.
@@ -70,7 +70,7 @@ Key Components of the Code:
    - Fetch Data Button: Initiates the data retrieval process based on user inputs.
    - Expandable Sections: Provide additional information, a glossary, and help instructions to assist users in navigating the app.
 
-5. Data Fetching Function (`Agnirvafetch_space_weather`):
+5. Data Fetching Function (`fetch_space_weather`):
    - This function communicates with NASA's DONKI API to retrieve data based on the selected event type and date range.
    - It includes specific parameters for different event types to ensure accurate and relevant data is fetched.
    - The function uses caching (`@st.cache_data`) to store fetched data for an hour, reducing the number of API calls and speeding up the app.
@@ -93,4 +93,4 @@ Why This Application is Useful
 
 Summary
 
-The Agnirva Space Weather Visualizer is a powerful yet easy-to-use web application that brings complex space weather data to your fingertips. By leveraging NASA's reliable data sources and combining them with interactive visualizations, the app makes it simple for anyone to explore and understand the dynamic events occurring in space. Whether you're a student looking to learn more about solar flares or a researcher analyzing geomagnetic storms, this application provides the tools you need in an accessible format.
+The Space Weather Visualizer is a powerful yet easy-to-use web application that brings complex space weather data to your fingertips. By leveraging NASA's reliable data sources and combining them with interactive visualizations, the app makes it simple for anyone to explore and understand the dynamic events occurring in space. Whether you're a student looking to learn more about solar flares or a researcher analyzing geomagnetic storms, this application provides the tools you need in an accessible format.
